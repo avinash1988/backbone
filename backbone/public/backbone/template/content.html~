@@ -1,0 +1,19 @@
+<table>
+<tr>
+	<th>Id</th>
+	<th>Name</th>
+	<th>Age</th>
+</tr>
+	
+		<%_.each(records, function(record){
+						%>
+								<tr>
+										<td><%= record.get('id')%></td>
+										<td><%= record.get('name')%></td>
+										<td><%= record.get('age')%></td>
+										<td><a href="#/edit/<%= record.get('id')%>" >Edit</a></td>
+										<td><a href="#/delete/<%= record.get('id')%>" >Remove</a></td>
+								<tr>
+						<%
+		});%>
+<table>

@@ -1,0 +1,9 @@
+define('HeaderView',[
+		'jquery',
+		'underscore',
+		'backbone',		
+], function($, _, backbone){
+		var headerView = {};
+		headerView
+
+});

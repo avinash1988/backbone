@@ -1,0 +1,12 @@
+<h2> Edit Record !! </h2>
+<table style="border:none;">
+<tr>
+			<td>Name </td><td> <input tyep="text" id = "editName" value = "<%= edit.get('name') %>" /></td>
+</tr>
+<tr>
+			<td>Age </td><td><input tyep="text" id = "editAge" value = "<%= edit.get('age') %>" /></td>
+</tr>
+<tr>
+			<td><input type="button" id="saveButton" value = "save"/> </td><td><input type="button" id="cancelButton" value = "cancel"/></td>
+</tr>
+</table>
