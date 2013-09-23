@@ -76,7 +76,7 @@ define('EditView', [
 										
 											success: function(){
 												var app = nameSpace.app;
-												app.navigate('',{trigger:true})
+												app.navigate('show',{trigger:true})
 											}
 								});
 					}	,
@@ -84,7 +84,7 @@ define('EditView', [
 					//save edited data.
 					cancelFunction: function(){
 							var app = nameSpace.app;
-							app.navigate('',{trigger:true});
+							app.navigate('show',{trigger:true});
 					}	
 
 			});
