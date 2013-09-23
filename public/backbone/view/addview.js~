@@ -32,7 +32,7 @@ define('AddView', [
 
 					goBack: function(){
 							var app = nameSpace.app;
-							app.navigate('',{trigger:true});
+							app.navigate('show',{trigger:true});
 					},
 
 					addFunction: function(){
@@ -53,7 +53,7 @@ define('AddView', [
 
 										success: function(){							
 												var app = nameSpace.app;
-												app.navigate('',{trigger:true});
+												app.navigate('show',{trigger:true});
 										}
 							});
 

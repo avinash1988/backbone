@@ -25,7 +25,7 @@ function($, _ , backbone, Router, listModel){
 												alert("Sorry Unable to delete data.!!!!");
 										},
 										success: function(){
-												app.navigate('',{trigger:true});
+												app.navigate('show',{trigger:true});
 										}
 						});
 		}) 

@@ -9,9 +9,10 @@ define('Router',
 					'HeaderView',
 					'EditView',
 					'AddView',
+					'ContentView',
 					'LoginView'
 				],
-				function($, _ , backbone, HeaderView, EditView, AddView, LoginView){
+				function($, _ , backbone, HeaderView, EditView, AddView, ContentView,  LoginView){
 					var appRouter = {};
 
 					//creating Backbone Router
@@ -25,6 +26,7 @@ define('Router',
 
 							routes:{
 								'':'header',
+								'show':'showList',
 								'edit/:id':'editRecord',
 								'delete/:id':'deleteRecord',
 								'add':'addRecord'
@@ -50,6 +52,11 @@ define('Router',
 									this.addVeiw = new AddView();
 									$("#page-content").html(this.addVeiw.render());
 
+							},
+
+							showList: function(){
+											this.contentView = new ContentView();
+											$("#page-content").html(this.contentView.render());
 							}
 		
 					});		//Router close.
